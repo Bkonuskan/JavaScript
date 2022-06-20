@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="">Menü1</a>
+  <a href="" onclick="menus()">Menü2</a>
+      
+    <div class="dropdown-content"id="dropdown" >
+        <ul class="menu_list">
+            <li class="menu_item"><a href="">Untermenü1</a></li>
+            <li class="menu_item"><a href="">Untermenü2</a></li>
+            <li class="menu_item"><a href="">Untermenü3</a></li>             
+          </ul>
+    </div>  
+    
+  
+  <a href="">Menü3</a>
+</div>
+
+ 
+<script>
+   
+ 
+
+
+function menus() {
+  var dropdown = document.querySelector(".dropdown-content")
+    dropdown.classList.toggle('active')
+     
+} 
+</script>
+</body>
+</html>
